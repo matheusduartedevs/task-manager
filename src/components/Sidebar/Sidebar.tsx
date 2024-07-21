@@ -2,9 +2,9 @@
 
 import { useGlobalState } from "@/context/globalProvider";
 import Image from "next/image";
-import styled from "styled-components";
 import menu from "@/utils/menu";
 import Link from "next/link";
+import SidebarStyled from '@/components/Sidebar/SidebarStyled'
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 
@@ -51,15 +51,8 @@ const Sidebar = () => {
           );
         })}
       </ul>
+      <button></button>
     </SidebarStyled>
   );
 };
-
-const SidebarStyled = styled.nav`
-  position: relative;
-  width: ${(props) => props.theme.sidebarWidth};
-  background-color: ${(props) => props.theme.colorBg2};
-  border: 2px solid ${(props) => props.theme.borderColor2}
-  border-radius: 1rem;
-`;
 export default Sidebar;
