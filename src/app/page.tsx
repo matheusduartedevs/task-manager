@@ -1,9 +1,7 @@
+import Tasks from "@/components/Tasks/Tasks";
+
 const Home = () => {
-  return (
-    <div>
-      <h1>Content</h1>
-    </div>
-  );
+  return <Tasks />;
 };
 
 export default Home;
